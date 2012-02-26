@@ -1,0 +1,8 @@
+function HomeController() {
+
+    this.index = function(request, response, next) {
+        response.send("Index!");
+    }
+};
+
+exports.homeController = homeController;
