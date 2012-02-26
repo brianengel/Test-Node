@@ -5,18 +5,18 @@ function ConfigurationManager(application) {
     function global() {
         application.use(express.bodyParser());
         application.use(express.methodOverride());
-        application.set('view engine', 'jade'); 
+        application.set('view engine', 'jade');
+        application.use(express.compiler({ src: __dirname + '/public', enable: ['less'] }));
+        application.use(express.static(__dirname + '/public'));
     }
     
     function development() {
         console.log("Running development...");
-        application.use(express.static(__dirname + '/public'));
         application.use(express.errorHandler({ dumpExceptions:true, showStack:true }));
     }
     
     function production() {
         console.log("Running development...");
-        application.use(express.static(__dirname + '/public'));
         application.use(express.errorHandler());
     }
 
