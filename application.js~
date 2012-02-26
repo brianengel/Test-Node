@@ -9,4 +9,4 @@ var configuration = require('./configuration');
 var manager = new configuration.ConfigurationManager(application);
 var settings = manager.configure();
 
-application.listen(11000);
+application.listen(3000);
