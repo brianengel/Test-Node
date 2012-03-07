@@ -5,6 +5,6 @@ It's my irst attempt at really using a lot of things including GitHub, Node.js, 
 
 ### Packages
 
-* [Jade](https://github.com/visionmedia/jade) - html templating
-* [Express](https://github.com/visionmedia/express) - web framework
-
+* [jade](https://github.com/visionmedia/jade) - html templating
+* [express](https://github.com/visionmedia/express) - web framework
+* [node-inspector](https://github.com/dannycoates/node-inspector) - node debugging
